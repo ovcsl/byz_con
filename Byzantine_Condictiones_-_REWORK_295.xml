@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rulemap title="Byzantine Condictiones - REWORK GPT 5.4" version="295" application="query-action-ai"><node id="1" title="D. 12.1 De rebus creditis si certum petetur et de condictione" alttext="" logic="or"><node id="80" title="Condictio ex mutuo" alttext="" logic="and"><node id="81" title="Plaintiff is no owner" alttext="" logic="and" invertlogic="yes"><parts><part name="query"/><part name="query-action"/><part name="query-definition">The question is whether the claimant is the owner. An owner is the person who has the most comprehensive and exclusive right to a thing. This right entails that he may use the thing, enjoy it and dispose of it, such as by sale, gift or destruction, within the limits of the law. 
+
+ 
+
+ 
+</part></parts><node id="12" title="Plaintiff is owner" alttext="" logic="and"><parts><part name="query"/><part name="query-action"/><part name="query-definition">The question is whether, in the decisive condictio-passage, the claimant proceeds as owner of a specific thing — asserting subsisting ownership as the ground of the claim, reclaiming that very thing as his property, so that the condictio stands in the place of a vindication — rather than as a creditor demanding a determinate amount or thing owed to him.
+
+Answer 1.0 only if the passage shows the claimant reclaiming a specific thing on the basis that it is and remains his own: for example, recovering a thing of his that another holds without any title derived from him, or fruits taken from his property, or a thing that became his by operation of law. Ownership must be the reason the claim lies, not merely a background fact.
+
+Answer 0.0 if the claim is a personal one for a determinate amount or thing — arising from a payment, a loan, a delict such as theft, an enrichment, or any obligation — even where the claimant in fact still holds title and no valid transfer to the defendant occurred. In a furtive taking, the victim may condict against the thief although he remains owner: the ground of that condictio is the delict, not his ownership, so answer 0.0. Also answer 0.0 where the thing has been consumed or has otherwise ceased to exist so that it could not be reclaimed in specie; or where the thing was delivered to the defendant as an acquirer and the passage grants the condictio for that very thing (the availability of a condictio rather than a vindication indicating that ownership passed with the delivery).
+Decide only from the legally decisive condictio-passage, not from the fragment as a whole. Do not equate a mere right to restitution with proceeding as owner.
+</part></parts></node></node><node id="5" title="Contract mutuum (contract loan for consumption)" alttext="" logic="and"><node id="68" title="Consensus" alttext="" logic="virtual"><parts><part name="query"/><part name="query-action"/><part name="query-definition">The question is whether, in the decisive condictio-passage of the current &lt;Sachverhalt&gt;, there is consensus directed at a loan for consumption: the intentions of giver and recipient coincide in treating the giving as a mutuum, that is, as a credit of money or other fungibles to be repaid in the same quantity and kind (tantundem eiusdem generis).
+
+Answer 1.0 if the passage shows that both parties treat the giving as such a credit. This includes: a deposit that the depositor later permits the recipient to use, so that from that point both treat the holding as a quasi-mutuum; and the case where the amounts named by the parties differ but overlap, so that consensus exists on the overlapping amount. Where the passage presents credit and payment variants together (credendi vel solvendi causa), answer 1.0 if the credit variant shows coinciding intentions. Defects of capacity or authority on the side of the giver (an insane lender, a ward acting without the guardian's authority, a slave lending against or without the master's will, a thief, a giver using another's coins or coins owned in common) do NOT negate consensus for this element; such defects concern the transfer of ownership (datio), not the agreement. Answer 1.0 in such cases if both parties nevertheless intend a credit.
+
+Answer 0.0 if the passage shows a fundamental divergence of intention: one party intends a gift, a deposit for safekeeping, or a loan for use, while the other receives as a loan for consumption, or conversely. Also answer 0.0 if the transaction in the passage is of another type altogether - such as a payment made solely upon or alongside a stipulation, a sale, or another distinct transaction - where no credit repayable in kind is intended by both parties; or if the parties' intentions cannot be determined from the passage. A numeratio whose return was arranged by stipulation - even a void stipulation, or one in favour of a third party - is such a payment, not a mutuum, unless the passage shows both parties intending a loan for consumption between themselves.
+
+Assess only this single element. Do not decide whether ownership passed and do not decide which condictio applies. 
+
+ 
+</part></parts></node><node id="70" title="Datio (transfer of ownership)" alttext="" logic="virtual"><parts><part name="query"/><part name="query-action"/><part name="query-definition">The question is whether, in the present &lt;Sachverhalt&gt;, there has been a giving of money or other fungible goods as a loan for consumption (mutuum) or quasi-mutuum in such a way that ownership passes to the recipient (datio), so that the giver loses ownership as a result of this legal act.
+
+Answer 1.0 only if the passage shows the recipient treated as owner of the fungibles given as such a credit. This may occur either:
+
+- because the passage describes a giving credendi causa of money or other fungibles by a giver who is entitled and authorised to alienate them, to be consumed by the recipient with the same quantity and kind to be returned; or
+
+- because the passage describes a deposit that is later permitted to be used, so that possession changes animo and the relationship is treated as a quasi-mutuum, with risk passing to the user; or
+
+- because the passage shows a giving performed with the intent to pass ownership by a giver who has full capacity and authority to alienate, even where the parties disagree about the nature of the transaction. Treat datio as satisfied in that case even if the passage concludes that ownership ultimately did not pass because of the parties' divergent understanding: the divergence concerns consensus, not datio.
+
+Answer 0.0 if the passage shows that ownership could not pass in full because the giver lacked capacity or authority to alienate: the giver is insane, is a ward acting without the guardian's authority, is a slave lending against or without the master's will, is a thief, gives coins belonging to another without the owner's consent, or gives coins owned in common or from a common fund - a communal slave or a co-owner cannot alienate the co-owners' shares, so ownership of the common coins does not pass in full. Also answer 0.0 if the giving in the passage is a payment (numeratio) made upon, alongside, or in performance of a stipulation or another distinct transaction rather than a loan for consumption - this holds even where the passage describes that numeratio itself as creating a contract by delivery (re), and even where the stipulation is void or made in favour of a third party: such a giving is a payment, not a loan for consumption, unless the passage shows both parties intending a mutuum between themselves; if the passage concerns only safekeeping without permission to use, pledge without permission to consume, or loan for use (commodatum); or if the passage is purely abstract and does not describe how ownership passes in a concrete mutuum or quasi-mutuum scenario.
+
+Do not restrict datio to any particular numeric constellation, and do not require that the amount given correspond to the amount acknowledged as owed; where the amounts differ, decide only whether ownership of what was actually given passed.
+
+Assess only this single element. Do not decide whether consensus exists and do not decide which condictio applies. 
+
+ 
+</part></parts></node></node><node id="89" title="Mutuum claim at issue (the loan itself is the doctrine under discussion)" alttext="" logic="virtual"><parts><part name="query"/><part name="query-action"/><part name="query-definition">The question is whether the decisive condictio-passage treats the claim as arising from the loan for consumption itself: the formation of the mutuum (including formation through a payment made at the lender's request by or to a third party), its content (for example how much is owed when the sums named by the parties differ), or the repayment of the same quantity and kind - or the corresponding quasi-mutuum where a deposit was later permitted to be used.
+
+Answer 1.0 if the mutuum claim as such is asserted, discussed, or denied in the passage: the passage's doctrinal point concerns the loan's coming into existence, its extent, or its repayment.
+
+Answer 0.0 if the passage discusses the condictio arising from the numeratio in relation to a void or superfluous stipulation - whether the payment itself grounds recovery when the stipulation fails - even where the underlying giving was a valid loan; or if no mutuum-specific question is at issue in the passage.
+
+Assess only this single element. Do not decide which condictio applies. 
+</part></parts></node></node><node id="6" title="Condictio de bene depensis" alttext="" logic="and"><node id="82" title="Plaintiff is no owner" alttext="" logic="and" invertlogic="yes"><parts><part name="query"/><part name="query-action"/><part name="query-definition">The question is whether the claimant is the owner. An owner is the person who has the most comprehensive and exclusive right to a thing. This right entails that he may use the thing, enjoy it and dispose of it, such as by sale, gift or destruction, within the limits of the law. 
+
+ 
+
+ 
+</part></parts><module refid="12"/></node><node id="75" title="No contract mutuum (no loan for consumption)" alttext="" logic="and" invertlogic="yes"><module refid="68"/><module refid="70"/></node><node id="77" title="Consumere (spend); Sine dolo malo (without fraud)" alttext="" logic="virtual"><parts><part name="query"/><part name="query-action"/><part name="query-definition">The question is whether the decisive condictio-passage shows that the money or goods given have been spent or otherwise consumed by the recipient (consumpta pecunia), so that they no longer exist as identifiable objects in the recipient's hands. Answer 1.0 if the passage states or presupposes that the coins or goods have been consumed or spent, including consumption in good faith and consumption in accordance with the giver's will; where only part has been consumed, this element is satisfied for that part. The recipient's good faith at the moment of spending does not exclude this element. Treat consumption as satisfied where the condictio is asserted for the case that the goods are consumed, even if that case is expressed conditionally or distributively (for example: si consumpserit, consumptis eis, et consumantur nummi). Premises stated for the principal scenario of the passage - in particular that the coins are consumed - extend to analogies or generalisations asserting the same condictio (for example clauses introduced by nam et si), unless the passage expressly negates consumption for that clause. Answer 0.0 if the coins or goods are still extant and identifiable, so that they could be reclaimed as such; if the passage treats consumption as merely hypothetical and denies that it occurred; or if the recipient ceased to possess them by fraudulent disposal (dolo malo desinere possidere), which the sources direct to a different remedy rather than to this condictio. Assess only this single element. Do not decide whether a valid loan existed and do not decide which condictio applies.
+
+ 
+</part></parts></node></node><node id="7" title="Condictio ex bono et aequo" alttext="" logic="and"><node id="95" title="Plaintiff is no owner" alttext="" logic="and" invertlogic="yes"><parts><part name="query"/><part name="query-action"/><part name="query-definition">The question is whether the claimant is the owner. An owner is the person who has the most comprehensive and exclusive right to a thing. This right entails that he may use the thing, enjoy it and dispose of it, such as by sale, gift or destruction, within the limits of the law. 
+
+ 
+
+ 
+</part></parts><module refid="12"/></node><node id="91" title="Person Z is enriched at the expense of person Y, who should have had property from X. " alttext="" logic="virtual"><parts><part name="query"/><part name="query-action"/><part name="query-definition">The question is whether the decisive passage shows a three-person constellation: a thing, its value, or its proceeds, belonging or legally destined to the claimant's estate - for example by legacy, by attribution to his assets, or by another legal assignment from a third person - has come into the hands of the defendant, who is not bound to the claimant by any contract concerning that thing, and the defendant is thereby enriched at the expense of the claimant's estate.
+
+Answer 1.0 if the passage shows that the defendant possesses, has sold, has had it delivered, or has otherwise profited from a thing belonging or destined to the claimant as if it were his own or destined to himself, and that the enrichment - the thing itself, its substitute, or its price - can still be identified in the defendant's assets, so that the claimant proceeds directly against the enriched defendant although no contract binds them with respect to that thing.
+
+Answer 0.0 if the defendant is the claimant's direct counterparty in the transaction from which the claim arises; if no identifiable enrichment of the defendant at the expense of the claimant's estate appears in the passage; or if the passage shows that the assets constituting the enrichment have been consumed so that nothing traceable remains.
+Also answer 0.0 where the passage shows that the claimant himself acquires the obligation from that very giving - for example money given in the claimant's name (tuo nomine) so that a loan obligation is acquired to him - because the defendant is then the claimant's own contractual debtor concerning that thing, not an unconnected third party enriched at his expense. The claimant's absence or ignorance at the moment of the giving does not make him a third party if the giving constitutes him creditor.
+
+Assess only this single element. Do not decide which condictio applies. 
+ 
+</part></parts></node></node><node id="3" title="Condictio certi generalis" alttext="" logic="and"><node id="103" title="No more specific condictio satisified" alttext="" logic="or" invertlogic="yes"><module refid="80"/><module refid="6"/><module refid="7"/></node><module refid="12"/><node id="14" title="Items are without valid cause in the defendant’s possession. This constitutes unjust enrichment." alttext="" logic="or"><node id="16" title="Pecunia soluta (the money has been paid)" alttext="" logic="virtual"><parts><part name="query"/><part name="query-action"/><part name="query-definition">The question is whether the decisive condictio-passage shows that the claimant has fully paid the debt owed, so that the legal basis on which the defendant retained the claimant's thing - for example a thing validly pledged as security for that debt - has fallen away.
+
+Answer 1.0 if the passage shows that the secured debt has been discharged in full and the defendant nevertheless continues to retain the thing: with the discharge, the security function ceases and no valid legal basis for retention remains.
+
+Answer 0.0 if the debt is unpaid or only partly paid, so that the security or other causa for retention persists; or if the defendant's retention rests on another valid legal basis independent of the discharged debt.
+
+Assess only this single element. Do not decide which condictio applies. 
+
+ 
+</part></parts></node><node id="17" title="Ex iniusta causa (under unlawful cause)" alttext="" logic="virtual"><parts><part name="query"/><part name="query-action"/><part name="query-definition">The question is whether the decisive condictio-passage shows that the defendant holds the property without any valid legal basis: no lawful title or causa supports the acquisition or the retention.
+
+Answer 1.0 if the passage shows that the property - for example fruits or other things taken into possession - was acquired or is retained without a lawful title or causa.
+
+Answer 0.0 if the passage shows a valid legal basis for the defendant's possession, such as a sale, gift, lease, legacy, or another lawful title, or the consent of the person entitled.
+
+Assess only this single element. Do not decide which condictio applies. 
+
+ 
+</part></parts></node><node id="19" title="Post lustrum completum (after his term has ended)" alttext="" logic="virtual"><parts><part name="query"/><part name="query-action"/><part name="query-definition">The question is whether the decisive condictio-passage shows that a holder - for example a tenant - has continued to take fruits or produce into possession after the expiry of the term of his right, so that the legal ground for keeping such things has lapsed with the term.
+
+Answer 1.0 if the passage shows taking of fruits or produce after the term has ended (for example, after the expiry of a five-year lease) without the owner's consent: the expired relationship no longer constitutes a legal basis for the acquisition.
+
+Answer 0.0 if the taking occurred within the term, or if the owner consented to the continued taking, since that consent itself constitutes a sufficient legal basis.
+
+Assess only this single element. Do not decide which condictio applies. 
+
+ 
+</part></parts></node><node id="26" title="Vi fluminum importata (swept in by force of rivers)" alttext="" logic="virtual"><parts><part name="query"/><part name="query-action"/><part name="query-definition">The question is whether the decisive condictio-passage shows that things came into the defendant's control through natural forces - for example carried onto his land by the force of a river - without any transfer, title, or other valid legal basis, because they did not have an owner before. This constitutes a natural way of acquiring ownership.
+
+Answer 1.0 if the passage shows that the things arrived by natural forces and a new right of ownership arises.
+
+Answer 0.0 if the passage shows that the holder's position rests on a lawful mode of acquiring or receiving the things, or on the will of the person entitled.
+
+Assess only this single element. Do not decide which condictio applies. 
+</part></parts></node><node id="58" title="Ex causa furtiva (by way of theft)" alttext="" logic="virtual"><parts><part name="query"/><part name="query-action"/><part name="query-definition">The question is whether the decisive condictio-passage shows that someone has taken another person's property against the owner's will, intending to derive benefit from it (a taking of the kind constituting theft).
+
+Answer 1.0 if the passage shows a taking against the owner's will: such possession confers no lawful title or valid legal ground for retention.
+
+Answer 0.0 if the passage shows that the taking occurred with the consent of the owner or under a valid title.
+
+Assess only this single element. Do not decide which condictio applies. 
+
+ 
+</part></parts></node></node></node><node id="4" title="Condictio certi" alttext="" logic="and"><module refid="103"/><node id="28" title="Plaintiff is no owner" alttext="" logic="and" invertlogic="yes"><parts><part name="query"/><part name="query-action"/><part name="query-definition">The question is whether the claimant is the owner. An owner is the person who has the most comprehensive and exclusive right to a thing. This right entails that he may use the thing, enjoy it and dispose of it, such as by sale, gift or destruction, within the limits of the law. Example: If the claimant has transferred a thing to another party under a transaction that appears to involve a valid transfer of ownership, can he still be regarded as the owner bringing a condictio, or has he in fact lost ownership through a valid transfer of title? Does the loss of ownership prevent him from reclaiming the thing, so that the case is not so much about enforcing ownership but rather about reversing a transfer or reclaiming a thing that has come into the possession of the other party under a contract or similar arrangement? The answer is that, even if ownership has passed, the decisive question is whether the defendant retains the thing without a valid legal basis. If so, the condictio lies not as an action vindicating ownership, but as an action reversing an unjustified transfer and recovering enrichment. Example: If a master appoints his slave as a business manager, can it be argued that a condictio may be brought against the master on the ground that the transaction was concluded with the master’s authorisation? The answer is yes. Since the slave acts within the scope of authority granted by the master, the legal effects of the transaction are attributed to the master himself. Accordingly, a condictio may also be brought against the master. 
+
+ 
+
+ 
+</part></parts><module refid="12"/></node><node id="93" title="Ex qua certum petitur (numeratio)" alttext="" logic="or"><parts><part name="query"/><part name="query-action"/><part name="query-definition">The question is whether the decisive condictio-passage shows that a determinate object (certum) - a fixed sum of money or a specific, identified thing such as a particular parcel of land or a particular slave - is claimed, or its recovery discussed or denied, by means of the condictio. This condictio lies on the basis of a payment (numeratio), of any contract, whether concluded by delivery of a thing (re), by formal words (verbis), or otherwise, or of a delict such as theft (where the stolen thing or its value is claimed as a determinate object) - the general credit (creditum) as well as any specific credit contract - and it also lies where the passage claims a determinate object by condictio without stating the underlying causa. Discussion of the conditions or of the procedural consequences of such a claim - for example that it may be brought only once the obligation is actionable, a term has expired, or a condition has been fulfilled, or what must be restored once issue has been joined - also satisfies this element.
+
+Answer 1.0 if the passage shows a certum claimed or claimable by condictio. This includes: claims grounded in a numeratio, including where an accompanying stipulation is void (made for a third party, subject to an impossible condition, or concluded with a person lacking capacity) so that the payment itself grounds recovery; credits contracted through a slave or a manager acting within authority granted by the principal, whose legal effects are attributed to the principal; a valid stipulation for a certum, since what is promised as a certum is pursued by this condictio; claims directed at a determinate thing where the passage leaves the underlying causa unstated; and a claim for a determinate thing or its value arising from a furtive taking (ex causa furtiva), since the theft victim's condictio pursues a certum. Do not answer 0.0 merely because the specific contract at issue is a loan for consumption (mutuum): the general credit claim covers the specific credit contracts as well.
+
+Answer 0.0 if the object claimed is not determinate (incertum); if the claim in the passage rests on the claimant's continued ownership of the thing; or if the passage narrates a giving that is defective on the giver's side - for lack of capacity or authority, because the coins belong to another or are owned in common, or because of a fundamental divergence of intention between the parties - so that the constellation belongs to the defective-credit elements rather than to the general credit claim. Also answer 0.0 if the credit was extended to a slave or a son under paternal power without the master's or father's authorisation (iussum) or appointment, and the claim under discussion rests on the peculium or on what was turned to the master's or father's benefit: those constellations belong to the condictio de peculio and the condictio de in rem verso.
+
+Assess only this single element. Do not decide which condictio applies.
+</part></parts></node></node><node id="96" title="Process Results" alttext="" logic="virtual"><parts><part name="query">id!=
+
+ 
+
+ 
+</part><part name="query-action">#Gesamt RESULT
+$4f51620e=
+$4f51620e=(with (current-process) (concat 
+    (if (= "Y" (fv "x3-value")) "Condictio certi generalis" "")
+    (if (= "Y" (fv "x4-value")) "Condictio certi" "")
+    (if (= "Y" (fv "x80-value")) "Condictio ex mutuo" "")
+    (if (= "Y" (fv "x6-value")) "Condictio de bene depensis" "")
+    (if (= "Y" (fv "x7-value")) "Condictio ex bono et aequo" "")
+    (if (= "Y" (fv "x97-value")) "Condictio de peculio" "")
+    (if (= "Y" (fv "x98-value")) "Condictio de in rem verso" "")
+    ))
+ 
+#REASONING
+$63a96ef1=(make-dnote (concat "Reasoning - " (fv "id") " - " (today)) (file-content-text (process-log (current-process))))
+</part><part name="query-definition"/></parts></node></node></rulemap>
